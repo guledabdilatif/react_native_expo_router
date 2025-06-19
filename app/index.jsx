@@ -16,8 +16,11 @@ export default function index() {
             {/* <Link href='/about' asChild>
             <Button title='go to about page'/>
             </Link> */}
-            <Link href='/login' asChild>
+            {/* <Link href='/login' asChild>
             <Button title='go to login page'/>
+            </Link> */}
+            <Link href='/home' asChild>
+            <Button title='go to tab one'/>
             </Link>
 
 

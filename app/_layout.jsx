@@ -2,14 +2,13 @@ import { Stack, useRouter } from 'expo-router';
 import { Text, TouchableOpacity } from 'react-native';
 
 
+const router = useRouter();
 export default function _layout() {
-    const router = useRouter();
     return (
         <Stack
             screenOptions={{
                 headerStyle: {
                     backgroundColor: 'red',
-
                 },
                 headerTintColor: "white"
             }}
@@ -35,7 +34,7 @@ export default function _layout() {
                 }}
             />
             <Stack.Screen
-                name='about'
+                name='home'
                 options={{
                     title: 'About Page',
                     headerTitleAlign: "center"
@@ -56,6 +55,12 @@ export default function _layout() {
                     presentation: 'modal'
                 }}
 
+            />
+            <Stack.Screen
+                name='(tabs)'
+                options={{
+                   headerShown:false
+                }}
             />
 
         </Stack>
